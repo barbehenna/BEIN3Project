@@ -1,11 +1,19 @@
 Package: BIEN3Project
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Tools to use the BIEN3 Project
 Version: 0.1
 Date: 2016-04-06
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Authors@R: c(
+    person("Alton", "Barbehnn", email = "barbehenna@kenyon.edu", role = c("cre", "aut")),
+    person("Brian", "Maitner", email = "", role = "aut"))
+Maintainer: Alton Barbehenn <barbehenna@kenyon.edu>
+Imports:
+    maptools,
+    rgdal,
+    rgeos,
+    RPostgreSQL
+Description: This is a set of functions that allow the user to interface with the BIEN3
+    project's database.
+License: GPL (>= 2)
 LazyData: TRUE
 RoxygenNote: 5.0.1
