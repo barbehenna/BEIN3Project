@@ -157,7 +157,7 @@ BIEN.list.country<-function(country,cultivated=FALSE,only.new.world=TRUE){
 #'
 #' @author Brian Maitner
 #'
-#' @param Accepts single countries or vectors
+#' @param state Accepts single countries or vectors
 #' @param cultivated cultivated = Return cultivated records as well?  Default is FALSE.
 #' @param only.new.world only.new.world = Return only records from the New World?  Default is TRUE.
 #'
@@ -719,11 +719,9 @@ BIEN.gis.box<-function(min.lat,max.lat,min.long,max.long,cultivated=FALSE,only.n
 #' @note The code marked as not run is only marked that way because the directories are not initialized.
 #'
 #' @examples species_vector<-c("Abies_lasiocarpa","Abies_amabilis")
-#' testwd<-"/Users/Alton/Documents/GitHub/KerkhoffPackage" #Set a working directory,Obviously change this to suit your needs
 #' BIEN.ranges.species(species_vector)
-#' BIEN.ranges.species(species_vector,test_wd)#saves ranges to a specified working directory
 #' BIEN.ranges.species("Abies_lasiocarpa")
-#' BIEN.ranges.species("Abies_lasiocarpa","/Users/Alton/Documents/GitHub/KerkhoffPackage")
+#' BIEN.ranges.species("Abies_lasiocarpa","/Users/Alton/Documents/GitHub/BIEN3Project")
 BIEN.ranges.species<-function(species,directory=NULL,matched=TRUE,match_names_only=FALSE){
   require(RPostgreSQL)
   require(rgeos)
@@ -1025,7 +1023,7 @@ BIEN.trait.traitbygenus<-function(trait,genus){
 #' @return This function downloads specific trait data for given family/families
 #'
 #' @param trait Accepts a single trait or a vector
-#' @param genus Accepts a single family or a vector
+#' @param family Accepts a single family or a vector
 #'
 #' @export
 #'
@@ -1109,7 +1107,7 @@ BIEN.trait.genus<-function(genus){
 #'
 #' @author Brian Maitner
 #'
-#' @param genus Accepts a single family or a vector
+#' @param family Accepts a single family or a vector
 #'
 #' @export
 #'
