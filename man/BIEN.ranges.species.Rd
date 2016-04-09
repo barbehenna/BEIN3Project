@@ -24,11 +24,11 @@ The code marked as not run is only marked that way because the directories are n
 }
 \examples{
 species_vector<-c("Abies_lasiocarpa","Abies_amabilis")
-testwd<-"/Users/Alton/Documents/GitHub/KerkhoffPackage" #Set a working directory,Obviously change this to suit your needs
 BIEN.ranges.species(species_vector)
-BIEN.ranges.species(species_vector,test_wd)#saves ranges to a specified working directory
 BIEN.ranges.species("Abies_lasiocarpa")
-BIEN.ranges.species("Abies_lasiocarpa","/Users/Alton/Documents/GitHub/KerkhoffPackage")
+\dontrun{
+BIEN.ranges.species("Abies_lasiocarpa","/Users/Alton/Documents/GitHub/BIEN3Project")
+}
 }
 \author{
 Brian Maitner

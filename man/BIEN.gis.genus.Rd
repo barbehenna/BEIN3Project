@@ -20,7 +20,8 @@ Occurrences from Genus
 BIEN.gis.genus("Abutilon")
 genus_vector<-c("Abutilon","Abronia")
 BIEN.gis.genus(genus_vector)
-BIEN.gis.genus(genus = "Abutilon",cultivated = TRUE,only.new.world = FALSE)#returns all records for the genus Abutilon, including cultivates and Old World records.
+BIEN.gis.genus(genus = "Abutilon",cultivated = TRUE,only.new.world = FALSE)
+#returns all records for the genus Abutilon, including cultivates and Old World records.
 }
 \author{
 Brian Maitner

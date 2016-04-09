@@ -14,7 +14,7 @@ Traits from trait name
 }
 \examples{
 BIEN.trait.trait("Height")
-trait_vector<-c("Height", "Leaf dry mass")=
+trait_vector<-c("Height", "Leaf dry mass")
 BIEN.trait.trait(trait_vector)
 }
 \author{

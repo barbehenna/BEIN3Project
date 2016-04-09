@@ -24,7 +24,7 @@ BIEN.gis.box(min.lat, max.lat, min.long, max.long, cultivated = FALSE,
 Occurrence records from from lat/long Bounding box
 }
 \examples{
-output_test<-BIEN.gis.box(min.lat = 32,max.lat = 33,min.long = -114,max.long = -113,cultivated = TRUE, only.new.world = FALSE)
+output_test<-BIEN.gis.box(min.lat = 32,max.lat = 33,min.long = -114,max.long = -113)
 }
 \author{
 Brian Maitner

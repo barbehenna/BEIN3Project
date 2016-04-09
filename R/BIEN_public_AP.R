@@ -347,7 +347,8 @@ BIEN.list.all<-function(){
 #' @examples BIEN.gis.genus("Abutilon")
 #' genus_vector<-c("Abutilon","Abronia")
 #' BIEN.gis.genus(genus_vector)
-#' BIEN.gis.genus(genus = "Abutilon",cultivated = TRUE,only.new.world = FALSE)#returns all records for the genus Abutilon, including cultivates and Old World records.
+#' BIEN.gis.genus(genus = "Abutilon",cultivated = TRUE,only.new.world = FALSE)
+#' #returns all records for the genus Abutilon, including cultivates and Old World records.
 BIEN.gis.genus<-function(genus,cultivated=FALSE,only.new.world=TRUE){
 
   require("RPostgreSQL")
@@ -646,7 +647,7 @@ BIEN.gis.country<-function(country,cultivated=FALSE,only.new.world=TRUE){
 #'
 #' @export
 #'
-#' @examples output_test<-BIEN.gis.box(min.lat = 32,max.lat = 33,min.long = -114,max.long = -113,cultivated = TRUE, only.new.world = FALSE)
+#' @examples output_test<-BIEN.gis.box(min.lat = 32,max.lat = 33,min.long = -114,max.long = -113)
 BIEN.gis.box<-function(min.lat,max.lat,min.long,max.long,cultivated=FALSE,only.new.world=TRUE){
 
   require("RPostgreSQL")
@@ -721,7 +722,9 @@ BIEN.gis.box<-function(min.lat,max.lat,min.long,max.long,cultivated=FALSE,only.n
 #' @examples species_vector<-c("Abies_lasiocarpa","Abies_amabilis")
 #' BIEN.ranges.species(species_vector)
 #' BIEN.ranges.species("Abies_lasiocarpa")
+#' \dontrun{
 #' BIEN.ranges.species("Abies_lasiocarpa","/Users/Alton/Documents/GitHub/BIEN3Project")
+#' }
 BIEN.ranges.species<-function(species,directory=NULL,matched=TRUE,match_names_only=FALSE){
   require(RPostgreSQL)
   require(rgeos)
@@ -888,7 +891,7 @@ BIEN.trait.species<-function(species){
 #' @export
 #'
 #' @examples BIEN.trait.trait("Height")
-#' trait_vector<-c("Height", "Leaf dry mass")=
+#' trait_vector<-c("Height", "Leaf dry mass")
 #' BIEN.trait.trait(trait_vector)
 BIEN.trait.trait<-function(trait){
   require("RPostgreSQL")

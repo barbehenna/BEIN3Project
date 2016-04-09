@@ -9,7 +9,7 @@ BIEN.trait.traitbyfamily(trait, family)
 \arguments{
 \item{trait}{Accepts a single trait or a vector}
 
-\item{genus}{Accepts a single family or a vector}
+\item{family}{Accepts a single family or a vector}
 }
 \value{
 This function downloads specific trait data for given family/families

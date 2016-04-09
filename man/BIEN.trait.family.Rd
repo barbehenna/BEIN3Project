@@ -7,7 +7,7 @@
 BIEN.trait.family(family)
 }
 \arguments{
-\item{genus}{Accepts a single family or a vector}
+\item{family}{Accepts a single family or a vector}
 }
 \description{
 Traits from family/families

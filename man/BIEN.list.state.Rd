@@ -7,11 +7,11 @@
 BIEN.list.state(state, cultivated = FALSE, only.new.world = TRUE)
 }
 \arguments{
+\item{state}{Accepts single countries or vectors}
+
 \item{cultivated}{cultivated = Return cultivated records as well?  Default is FALSE.}
 
 \item{only.new.world}{only.new.world = Return only records from the New World?  Default is TRUE.}
-
-\item{Accepts}{single countries or vectors}
 }
 \description{
 Species list from state(s)
