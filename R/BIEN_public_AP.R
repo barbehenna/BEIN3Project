@@ -4,8 +4,6 @@
 #'
 #' @author Brian Maitner
 #'
-#' @keywords GIS
-#'
 #' @param species species here can be either a single species or a vector of species
 #' @param cultivated cultivated = Return cultivated records as well?  Default is FALSE.
 #' @param only.new.world only.new.world = Return only records from the New World?  Default is TRUE.

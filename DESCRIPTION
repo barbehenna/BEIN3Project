@@ -7,6 +7,11 @@ Author: Authors@R: c(
     person("Alton", "Barbehnn", email = "barbehenna@kenyon.edu", role = c("cre", "aut")),
     person("Brian", "Maitner", email = "", role = "aut"))
 Maintainer: Alton Barbehenn <barbehenna@kenyon.edu>
+Depends:
+    maptools,
+    rgdal,
+    rgeos,
+    RPostgreSQL
 Imports:
     maptools,
     rgdal,

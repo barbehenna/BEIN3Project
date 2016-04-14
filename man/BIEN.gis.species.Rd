@@ -24,5 +24,4 @@ BIEN.gis.species(species_vector)
 \author{
 Brian Maitner
 }
-\keyword{GIS}
 
