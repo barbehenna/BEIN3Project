@@ -19,6 +19,6 @@ Imports:
     RPostgreSQL
 Description: This is a set of functions that allow the user to interface with the BIEN3
     project's database.
-License: GPL (>= 2)
+License: AGPL-3
 LazyData: TRUE
 RoxygenNote: 5.0.1
